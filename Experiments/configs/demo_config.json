@@ -1,0 +1,28 @@
+{
+    "seed": 2333,
+    "num_folds": 5, 
+    "folds_list": [0, 1, 2, 3, 4] ,
+    "data_dir": "/data1/minmin/CelebA/img_align_celeba/",
+    "bbox_dir": "/data1/minmin/CelebA/list_bbox_celeba.csv",
+    "ldmk_dir": "/data1/minmin/CelebA/list_landmarks_align_celeba.csv",
+    "parts_dir": "/data1/minmin/CelebA/list_eval_partition.csv",
+    "masked_dir": "/data1/minmin/CelebA_With_Masks/",
+    "mask_dir": "/data1/minmin/Binary_Masks/",
+    "dataset": "CelebA",
+    "augment": true, 
+    "batch_size": 4,
+    "device": "cuda",
+    "epochs": 10,
+
+
+    "summary": true,
+    "summary_dir": "./Experiments/tfboards/",
+    "model" : "DC_GAN_v3",
+    "name": "Debug", 
+
+    "lr": 2e-4,
+    "schedule_milestone": [10, 20],
+    "g_cnum": 32,
+    "d_cnum": 64
+
+}
